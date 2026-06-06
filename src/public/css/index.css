@@ -1,0 +1,70 @@
+/* ヘッダー */
+header {
+    text-align: center;
+    color: #8D7B6B;
+    font-family: Times New Roman;
+    font-size: 36px;
+}
+
+h1 {
+    text-align: center;
+    color: #8D7B6B;
+    font-family: Times New Roman;
+    font-size: 24px;
+}
+
+/* フォーム全体 */
+form {
+    color: #8D7B6B;
+    font-family: Inika;
+    width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    background-color: #f4f4f4;
+}
+
+/*必須項目※ */
+form .required {
+    color: red;
+}
+
+/* フォームの入力項目 */
+label {
+    display: inline-block;
+    width: 150px;
+    vertical-align: top;
+}
+
+select {
+    border: none;
+    background-color: #f4f4f4;
+}
+
+textarea {
+    border: none;
+    background-color: #f4f4f4;
+}
+
+form>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form>div>label:first-child {
+    width: 200px;
+}
+
+/* ボタン */
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #8D7B6B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

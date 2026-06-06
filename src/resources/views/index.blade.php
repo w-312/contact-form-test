@@ -17,7 +17,8 @@
 
   <h1>Contact</h1>
 
-  <form>
+  <form action="/confirm" method="post">
+    @csrf
 
   <div>
     <label>お名前
@@ -61,7 +62,7 @@
     <label>住所
       <span class="required">※</span>
     </label>
-    <input type="text" name="postal_code" placeholder="例：東京都渋谷区千駄ヶ谷1-2-3">
+    <input type="text" name="address" placeholder="例：東京都渋谷区千駄ヶ谷1-2-3">
   </div>
 
   <div>
@@ -77,8 +78,8 @@
     <option value="">選択してください</option>
       <option value="product">1.商品のお届けについて</option>
       <option value="service">2.商品の交換について</option>
-      <option value="other">3.商品トラブル</option>
-      <option value="other">4.ショップへのお問合せ</option>
+      <option value="trouble">3.商品トラブル</option>
+      <option value="shop">4.ショップへのお問合せ</option>
       <option value="other">5.その他</option>
     </select>
   </div>
@@ -90,7 +91,7 @@
     <textarea name="message" placeholder="お問い合わせ内容をご記載ください"></textarea>
   </div>
 
-    <button>確認画面</button>
+    <button type="submit">確認画面</button>
 
 
 </form>
